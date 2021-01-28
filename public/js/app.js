@@ -16,7 +16,8 @@ weatherForm.addEventListener('submit', (event) => {
                 messageTwo.textContent = '';
             } else {
                 messageOne.textContent = data.location;
-                messageTwo.textContent = 'It is currently ' + data.forecast.temperature + '°C . It feels like ' +  data.forecast.feelslike + '°C';
+                console.log(data );
+                messageTwo.textContent = 'It is currently ' + data.forecast.temperature + '°C . It feels like ' +  data.forecast.feelslike + '°C. The humditiy is ' + data.forecast.humidity + '%';
             }
         })
     })
